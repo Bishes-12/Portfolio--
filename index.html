@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .some {
+            display: grid;
+            grid-template-areas:
+            "header"
+            "body"
+            "footer"; 
+            grid-template-rows: 100px 1fr 100px;
+        }
+        .navi{
+            display: flex;
+            justify-content: center;
+        
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        img{ 
+            border-radius: 50%;
+        }
+        .divi{
+            display: flex;
+            align-items: center;
+        }
+        
+        </style>
 </head>
-<body>
-    <header><nav>
+<body class="some">
+    <header><nav class="navi">
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
         <a href="contact.html">Contact</a>
@@ -14,9 +42,10 @@
     </header>
     <section>
         <h1>About Me </h1>
-        <img src="./profile.jpg"alt="Bishes Somai" height="200px">
-        <figcaption>Mine picture.</figcaption><br>
-        <p>My name is Bishes Somai.<br>Currently I am doing my Bachelors in Computer Applications from LA GRANDEE INTERNATIONAL COLLEGE, Pokhara</p>
+         <div class ="divi">
+            <img src="./profile.jpg"alt="Bishes Somai" height="200px">
+          <p>My name is Bishes Somai.<br>Currently I am doing my Bachelors in Computer Applications from LA GRANDEE INTERNATIONAL COLLEGE, Pokhara</p>
+        </div>
         <h2>Skills</h2>
         <ul>
             <li>HTML</li>
